@@ -4,66 +4,30 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Frontend Store</title>
     </head>
     <body>
-        <header>
-
+        <header class = "header">
+            <a href="index.html">
+                <img class ="header__logo"src="img/logo.png" alt="Logotype">
+            </a>
         </header>
-        <nav>
-            <a href="index.html">Store</a>
-            <a href="us.html">About us</a>
+
+        <nav class = "nav">
+            <a class ="nav__link  nav__link" href="index.html">Store</a>
+            <a class ="nav__link nav__link--active" href="us.html">About us</a>
         </nav>
-        <main>
-            <section>
-                <h1>About us</h1>
-                <p> Quisque auctor, sem a eleifend tincidunt,
-                    erat eros finibus ante, sed aliquam 
-                    lacus dui at urna. 
-                </p>
-            </section>
-            <section>
-                <h2>We are the best option</h2>
-                <div>
-                    <div>
-                        <h3>The best price</h3>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-                            posuere cubilia curae; Proin porta pretium felis
+        <main class = "container ">
+            <h1 class="container__title">About Us</h1>  
+        </main>  
 
-                        </p>
-                    </div>
-                    <div>
-                        <h3>For Developers</h3>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et 
-                            ultrices posuere cubilia curae; Proin porta pretium felis
-
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Free dispatch</h3>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-                            posuere cubilia curae; Proin porta pretium felis
-
-                        </p>
-                    </div>
-                    <div>
-                        <h3>The best cuality</h3>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices 
-                            posuere cubilia curae; Proin porta pretium felis
-
-                        </p>
-                    </div>
-                    
-
-                </div>
-
-            </section>
-            
-        </main>
-        <footer>
-            <p>front end store- All the rights are reserved</p>
-        </footer>
-
-        
+        <footer class =" footer">
+            <p class="footer__text">front end store- All the rights are reserved</p>
+        </footer >
     </body>
 </html>
