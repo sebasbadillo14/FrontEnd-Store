@@ -2,7 +2,7 @@
     --primary : #9C27B0;
     --primaryOscure: #89119D;
     --secundary: #FFCE00;
-    --secundaryOscure: rgb(233,287,2);
+    --secundaryOscure: #d4b949;;
     --white: #FFF;
     --black: #000;
     --principalFont: 'Staatliches', cursive;
@@ -104,6 +104,7 @@ h3{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
+   
 }
 
 /*Products*/
@@ -148,3 +149,174 @@ h3{
 .product__price{
     font-family: var(--principalFont)
 }
+
+.graphic{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    
+}
+.graphic--shirt{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url(../img/grafico1.jpg);
+    
+}
+.graphic--node{
+    grid-column: 1/3;
+    grid-row: 5/6;
+    
+    background-image: url(../img/grafico2.jpg);
+}
+
+
+@media (min-width : 768px){
+    .graphic--shirt{
+        grid-column: 1/3;
+        grid-row: 2;
+        
+        
+    }
+    .graphic--node{
+        grid-column: 2/4;
+        grid-row: 5;
+        
+    }
+    
+}
+
+.us__content p{
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+.us__image img{
+    width: 100%;
+    
+
+}
+@media (min-width : 768px){
+    .us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.8rem;
+    }
+    .us__content{
+        padding: 1rem;
+        grid-row: 1/3;
+        grid-column: 1;
+    }
+    .us__content p{
+        font-size: 1.8rem;
+    }
+    .us__image{
+        grid-row: 1/3;
+        grid-column: 2;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.marketing h2{
+   font-family: var(--principalFont);
+}
+.marketing__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.marketing__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.marketing__box p,
+.marketing__box h3{
+    font-family: var(--principalFont);
+}
+
+.marketing__box p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+@media (min-width : 768px){
+    .marketing__content{
+        
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+    
+/*Product Page*/
+
+
+
+.shirt__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shirt__content p{
+    text-align: center;
+    padding: .2rem;
+}
+
+
+@media (min-width : 768px){
+    .shirt{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .shirt__img img{
+        margin:auto;
+    }
+}
+
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form__camp{
+    /*
+    border-color:var(--primaryOscure) ;
+    border-width: 1rem;
+    border-style: solid;
+    
+    */
+
+    border: 1rem solid var(--primaryOscure);
+    background-color: var(--primary);
+    color: var(--white);
+    font-family: var(--principalFont);
+    font-size: 2rem;
+    padding: 1rem;
+    appearance: none;
+    
+
+}
+.form__submit{
+    background-color: var(--secundary);
+    border: none;
+    font-size: 2rem;
+    padding: .7rem;
+    font-family: var(--principalFont);
+    border-radius: 5px;
+    transition: background-color .3s ease;
+    grid-column: 1/3;
+
+}
+.form__submit:hover{
+    cursor: pointer;
+    background-color: var(--secundaryOscure);
+}
+
+
+
+
